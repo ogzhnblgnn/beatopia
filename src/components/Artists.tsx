@@ -9,25 +9,25 @@ const ARTISTS = [
     {
         name: "WAVEJACKERS",
         genres: "Producer,DJ",
-        image: "/images/kamil.jpg",
+        image: "/beatopia/images/kamil.jpg",
         color: "var(--color-neon-blue)",
     },
     {
         name: "LIDIA PETREA",
         genres: "Producer,DJ",
-        image: "/images/lidia.jpg",
+        image: "/beatopia/images/lidia.jpg",
         color: "var(--color-neon-pink)",
     },
     {
         name: "OZHN",
         genres: "Producer,DJ",
-        image: "/images/oguz.PNG",
+        image: "/beatopia/images/oguz.PNG",
         color: "var(--color-neon-red)",
     },
     {
         name: "DANT3",
         genres: "Producer,DJ",
-        image: "/images/demir.jpg",
+        image: "/beatopia/images/demir.jpg",
         color: "var(--color-neon-amber)",
     }
 ];
@@ -36,19 +36,19 @@ const CREW = [
     {
         name: "Hilal Yılmaz",
         genres: "Event Manager",
-        image: "/images/hilal.jpg",
+        image: "/beatopia/images/hilal.jpg",
         color: "var(--color-neon-purple)",
     },
     {
         name: "Murat ABİM",
         genres: "Event Manager",
-        image: "/images/murat.png",
+        image: "/beatopia/images/murat.png",
         color: "var(--color-neon-dark-light-gray)",
     },
     {
         name: "Mirsad Reyizim",
         genres: "Photographer",
-        image: "/images/mirsad.jpg",
+        image: "/beatopia/images/mirsad.jpg",
         color: "var(--color-neon-dark-yellow)",
     }
 ];
