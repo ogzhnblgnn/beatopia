@@ -3,31 +3,31 @@
 import { useRef, useState, useEffect } from "react";
 import { motion, Variants, useInView } from "framer-motion";
 import { Headphones, Music, Instagram } from "lucide-react";
-import { i } from "framer-motion/client";
+import Image from "next/image";
 
 const ARTISTS = [
     {
         name: "WAVEJACKERS",
         genres: "Producer,DJ",
-        image: "/beatopia/images/kamil.jpg",
+        image: "/images/kamil.jpg",
         color: "var(--color-neon-blue)",
     },
     {
         name: "LIDIA PETREA",
         genres: "Producer,DJ",
-        image: "/beatopia/images/lidia.jpg",
+        image: "/images/lidia.jpg",
         color: "var(--color-neon-pink)",
     },
     {
         name: "OZHN",
         genres: "Producer,DJ",
-        image: "/beatopia/images/oguz.PNG",
+        image: "/images/oguz.PNG",
         color: "var(--color-neon-red)",
     },
     {
         name: "DANT3",
         genres: "Producer,DJ",
-        image: "/beatopia/images/demir.jpg",
+        image: "/images/demir.jpg",
         color: "var(--color-neon-amber)",
     }
 ];
@@ -36,19 +36,19 @@ const CREW = [
     {
         name: "Hilal Yılmaz",
         genres: "Event Manager",
-        image: "/beatopia/images/hilal.jpg",
+        image: "/images/hilal.jpg",
         color: "var(--color-neon-purple)",
     },
     {
         name: "Murat ABİM",
         genres: "Event Manager",
-        image: "/beatopia/images/murat.png",
+        image: "/images/murat.png",
         color: "var(--color-neon-dark-light-gray)",
     },
     {
         name: "Mirsad Reyizim",
         genres: "Photographer",
-        image: "/beatopia/images/mirsad.jpg",
+        image: "/images/mirsad.jpg",
         color: "var(--color-neon-dark-yellow)",
     }
 ];
@@ -114,10 +114,11 @@ function ArtistCard({ artist, isArtist = true }: { artist: any; isArtist?: boole
                     maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)'
                 }}
             >
-                <img
+                <Image
                     src={artist.image}
                     alt={artist.name}
-                    className="object-cover w-full h-full opacity-60 group-hover:opacity-100 group-data-[active=true]:opacity-100 group-hover:scale-110 group-data-[active=true]:scale-110 transition-all duration-700 ease-in-out grayscale group-hover:grayscale-0 group-data-[active=true]:grayscale-0 pointer-events-auto"
+                    fill
+                    className="object-cover opacity-60 group-hover:opacity-100 group-data-[active=true]:opacity-100 group-hover:scale-110 group-data-[active=true]:scale-110 transition-all duration-700 ease-in-out grayscale group-hover:grayscale-0 group-data-[active=true]:grayscale-0 pointer-events-auto"
                 />
             </div>
 
