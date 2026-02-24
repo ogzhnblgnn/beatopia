@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-muted: #171717;
+  --color-border: #333333;
+  --color-neon-purple: #9d4edd;
+  --color-neon-blue: #00f5ff;
+  --color-neon-amber: #ff9e00;
+  --color-neon-red: #ff0015;
+  --color-neon-green: #00ff00;
+  --color-neon-pink: #ff00ff;
+  --color-neon-orange: #ff8c00;
+  --color-neon-yellow: #ffff00;
+  --color-neon-cyan: #00ffff;
+  --color-neon-magenta: #ff00ff;
+  --color-neon-white: #ffffff;
+  --color-neon-black: #000000;
+  --color-neon-gray: #808080;
+  --color-neon-light-gray: #d3d3d3;
+  --color-neon-dark-gray: #4a4a4a;
+  --color-neon-light-blue: #87ceeb;
+  --color-neon-light-green: #90ee90;
+  --color-neon-light-pink: #ffb6c1;
+  --color-neon-light-orange: #ffdab9;
+  --color-neon-light-yellow: #ffffe0;
+  --color-neon-light-cyan: #e0ffff;
+  --color-neon-light-magenta: #ff00ff;
+  --color-neon-light-red: #ff6347;
+  --color-neon-light-purple: #dda0dd;
+  --color-neon-light-brown: #d2b48c;
+  --color-neon-light-pink: #ffb6c1;
+  --color-neon-light-pink: #ffb6c1;
+  --color-neon-dark-blue: #00008b;
+  --color-neon-dark-green: #006400;
+  --color-neon-dark-pink: #8b008b;
+  --color-neon-dark-orange: #8b4513;
+  --color-neon-dark-yellow: #8b8b00;
+  --color-neon-dark-cyan: #008b8b;
+  --color-neon-dark-magenta: #8b008b;
+  --color-neon-dark-white: #8b8b8b;
+  --color-neon-dark-black: #8b8b8b;
+  --color-neon-dark-gray: #8b8b8b;
+  --color-neon-dark-light-gray: #8b8b8b;
+  --color-neon-dark-dark-gray: #8b8b8b;
+
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-montserrat);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: #030014;
+    /* Deep starless night base */
+    background-image:
+      radial-gradient(at 0% 0%, rgba(10, 25, 47, 0.8) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(2, 44, 34, 0.6) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(67, 20, 7, 0.5) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(19, 15, 64, 0.7) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: var(--color-foreground);
+    min-height: 100vh;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
