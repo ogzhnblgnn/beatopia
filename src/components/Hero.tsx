@@ -55,7 +55,7 @@ export default function Hero() {
                     className="text-sm md:text-xl text-foreground/70 font-sans tracking-[0.2em] mb-12 uppercase"
                 >
 
-                    Tech House &bull; Trance &bull; Disco House &bull; House
+                    Organic House &bull; Trance &bull; Tech House &bull; Techno
 
                 </motion.p>
 
